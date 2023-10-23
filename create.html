@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #output > div {
+            float: left;
+            height: 1px;
+            width: 1px;
+        }
+
+        #output {
+            background-color: white;
+            position: fixed;
+            top: 22%;
+            left: 5%;
+            border: 1px solid black
+        }
+
+        input {
+            outline: 0;
+        }
+
+        button {
+            background-color: #9B6A6C;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            padding: 8px;
+        }
+
+        body {
+            background-color: #424B54;
+            color: #93A8AC;
+            font-family: Arial, Helvetica, sans-serif;
+            word-wrap: normal;
+            overflow: scroll;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Create an image</h1>
+    <input type="number" placeholder="Width (px)" id="width-i" value="1700">
+    <input type="number" id="height-i" placeholder="Height (px)" value="700">
+    <p id="pixelAmt">Pixels: 0</p>
+    <p>
+        <button id="random">Generate Random</button>
+    </p>
+    <hr>
+
+    <div id="output">
+        <h1>The image will be this big.</h1>
+    </div>
+
+    <script src="./scripts/create.js"></script>
+</body>
+
+</html>
